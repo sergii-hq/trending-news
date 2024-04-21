@@ -1,7 +1,9 @@
 <app-page-content>
-  <div id="page-content">
+  <div id="page-title">
     <h1>News</h1>
+  </div>
 
+  <div id="page-content">
     <ul class="news-list">
       <li
         *ngFor="
@@ -12,6 +14,6 @@
       </li>
     </ul>
 
-    <pagination-controls class="pagination-size-lg" (pageChange)="onPageChange($event)"></pagination-controls>
+    <pagination-controls class="pagination" (pageChange)="onPageChange($event)"></pagination-controls>
   </div>
 </app-page-content>

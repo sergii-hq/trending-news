@@ -72,13 +72,13 @@ export class NewsPageComponent implements OnInit, OnDestroy {
     this.currentPage = currentPage;
     const observables: Observable<INewsItem>[] = [];
 
-    this.loadingService.show();
     this.newsIds
       .slice((this.currentPage - 1) * this.itemsPerPage, this.currentPage * this.itemsPerPage)
       .forEach((newsId) => {
         observables.push(this.newsService.getNewsItem(newsId));
       });
 
+    this.loadingService.show();
     forkJoin(observables)
       .pipe(takeUntil(this.destroy$))
       .subscribe(
