@@ -1,6 +1,14 @@
-# TrendingNews
+# Trending news
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+
+# Prerequisites
+
+Before you begin, ensure you have installed all necessary software and tools: Node.js, Angular CLI, Git.
+
+# Initial setup
+
+Start by cloning the repository to your local machine using command `git clone https://github.com/sergii-hq/trending-news.git`, then navigate to the primary project directory `cd trending-news` and run `npm install` to install the necessary dependencies.
 
 ## Development server
 
@@ -10,9 +18,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Code linting and formatting
+
+Run `npm run lint:fix` to check the files for linting errors and automatically fix any fixable errors it finds.
+Run `npm run prettier` to automatically format the code to ensure that all developers adhere to the same style.
+
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build:prod` to build the project in production mode and optimizes the build for the best performance. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
