@@ -1,0 +1,14 @@
+<div class="page">
+  <div class="container">
+    <div class="page-header">
+      <ng-content select="[id=page-breadcrumbs]"></ng-content>
+      <ng-content select="[id=page-title]"></ng-content>
+    </div>
+    <div class="page-body">
+      <ng-content select="[id=page-content]"></ng-content>
+    </div>
+    <div class="page-footer">
+      <ng-content select="[id=page-buttons]"></ng-content>
+    </div>
+  </div>
+</div>

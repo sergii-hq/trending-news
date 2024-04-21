@@ -1,0 +1,23 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  text-align: center;
+  font-size: 0;
+  padding: 15px 0;
+  background-color: #027efd;
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .img-wrapper {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
