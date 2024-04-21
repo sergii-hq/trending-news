@@ -1,0 +1,17 @@
+h1 {
+  @media (max-width: $md-max) {
+    font-size: 32px;
+  }
+}
+
+.news-list {
+  a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #e9eaeb;
+
+    &:hover {
+      box-shadow: 0 0 10px #272a351f;
+    }
+  }
+}

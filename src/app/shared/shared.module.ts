@@ -5,10 +5,11 @@ import { PageContentComponent } from './components/layout/page-content/page-cont
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { RouterLink } from '@angular/router';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [HeaderComponent, PageContentComponent, FooterComponent],
-  imports: [CommonModule, RouterLink, MatSnackBarModule],
-  exports: [CommonModule, FooterComponent, HeaderComponent, PageContentComponent],
+  imports: [CommonModule, RouterLink, MatSnackBarModule, NgxPaginationModule],
+  exports: [CommonModule, NgxPaginationModule, FooterComponent, HeaderComponent, PageContentComponent],
 })
 export class SharedModule {}

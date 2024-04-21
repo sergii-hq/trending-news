@@ -1,0 +1,26 @@
+// Extra extra extra large devices (extra extra large desktops and laptops)
+$xxxl-min: 1600px;
+
+// Extra extra large devices (extra large desktops and laptops)
+$xxl-max: $xxxl-min - 1px;
+$xxl-min: 1400px;
+
+// Extra large devices (large desktops and laptops)
+$xl-max: $xxl-min - 1px;
+$xl-min: 1200px;
+
+// Large devices (desktops and laptops)
+$lg-max: $xl-min - 1px;
+$lg-min: 992px;
+
+// Medium devices (landscape tablets)
+$md-max: $lg-min - 1px;
+$md-min: 768px;
+
+// Small devices (portrait tablets and large phones)
+$sm-max: $md-min - 1px;
+$sm-min: 576px;
+
+// Extra small devices (phones)
+$xs-max: $sm-min - 1px;
+$xs-min: 360px;
